@@ -1,0 +1,131 @@
+<script>
+    var brands = ["puma", "addidas" ,"jockey"]
+
+    console.log(brands)
+
+    document.write(`
+    <li>
+        ${brands[0]}
+    </li>
+    <li>
+        ${brands[1]}
+    </li>
+    <li>
+        ${brands[2]}
+    </li>
+    `)
+</script>
+
+
+
+
+
+
+<script>
+    captcha()
+function captcha()
+{
+    var number = Math.round(Math.random()*10)
+    var number2 = Math.random()*10
+    
+    document.write(`<h1>
+        enter ${number} +
+         enter    ${number2}
+        </h1>
+        <input> <button> check </button>
+        `)
+}
+
+</script>
+
+
+
+
+
+
+<button onclick="p()" > bi</button>
+
+
+
+<script>
+    
+
+     
+
+    function p()
+    {
+        document.write(`<button onclick = "myfunction()"  onmouseover="myfunction1()"> login </button>`)
+    }
+
+    
+    function myfunction()
+    {
+        document.write(`myfunction called`)
+    }
+
+   function myfunction1(){
+     document.write(`mouseover called`);
+   }
+</script>
+
+
+
+<script>
+    var product = {
+        name :"football",
+        price : 5000,
+        path : "https://rukminim1.flixcart.com/image/612/612/xif0q/jean/u/z/g/32-sp1016-sparky-original-imagq4342y5thvyq.jpeg?q=70"
+        
+    }
+
+    console.log(product)
+    document.write(`
+        <div> 
+            < img src = "${product.path}">
+            <h2>
+              ${product.price}
+            </h2>
+            <p> ${product.name}</p>
+        </div>
+            
+        `)
+</script>
+
+<style>
+    div {
+        border: solid;
+        width: 300px;
+
+    }
+
+    img {
+        width: 100%;
+    }
+</style>
+
+
+
+<script>
+    document.write(document)
+    document.write(typeof 10)
+    document.write(typeof document.body);
+    
+</script>
+
+
+
+<script src="external.js"></script>
+<style>
+    #xyz{
+        background-color: rgb(207, 125, 24);
+    }
+</style>
+<html>
+    <body>
+        <h1 id="xyz" style="border: solid;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique, minima iure debitis facere soluta repudiandae totam, voluptatum dolorem tempore iste esse, saepe ratione veniam ullam! Possimus quia tempora maxime.
+        </h1>
+        <p id="abc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem reiciendis error rem expedita vitae illum, neque a veniam natus enim asperiores optio, dolor veritatis et quia quam? Minus, expedita!</p>
+        <button onclick="myfunction()" > enter </button>
+    </body>
+</html>
